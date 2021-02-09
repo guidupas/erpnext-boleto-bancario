@@ -1,0 +1,108 @@
+{
+ "autoname": "EMISSAO-FAT-.DD.-.MM.-.YYYY.-.######",
+ "creation": "2021-01-14 15:34:11.499835",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plataforma_emissora",
+  "column_break_2",
+  "faturas_geracao_boleto_section",
+  "faturas_selecionadas",
+  "valor_boletos",
+  "company",
+  "customer",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "plataforma_emissora",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Plataforma Emissora",
+   "options": "Gerencianet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "company.name",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Emitir Boletos por Faturas de Venda",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Emitir Boletos por Faturas de Venda",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "faturas_geracao_boleto_section",
+   "fieldtype": "Section Break",
+   "label": "Faturas para Geracao dos Boletos"
+  },
+  {
+   "fieldname": "faturas_selecionadas",
+   "fieldtype": "Table",
+   "label": "Selecionar Faturas",
+   "options": "Faturas de Boletos por Fatura de Venda",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "valor_boletos",
+   "fieldtype": "Currency",
+   "label": "Valor total das Faturas",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Cliente",
+   "options": "Customer"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-02-01 16:32:06.121738",
+ "modified_by": "Administrator",
+ "module": "Boleto Bancario",
+ "name": "Emitir Boletos por Faturas de Venda",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

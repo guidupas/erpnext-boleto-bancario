@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include boleto_bancario *.css
+recursive-include boleto_bancario *.csv
+recursive-include boleto_bancario *.html
+recursive-include boleto_bancario *.ico
+recursive-include boleto_bancario *.js
+recursive-include boleto_bancario *.json
+recursive-include boleto_bancario *.md
+recursive-include boleto_bancario *.png
+recursive-include boleto_bancario *.py
+recursive-include boleto_bancario *.svg
+recursive-include boleto_bancario *.txt
+recursive-exclude boleto_bancario *.pyc

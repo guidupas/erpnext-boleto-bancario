@@ -1,0 +1,103 @@
+{
+ "creation": "2021-01-15 10:26:08.632989",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fatura",
+  "cliente",
+  "tipo_cliente",
+  "cpfcnpj",
+  "telefone",
+  "email",
+  "column_break_3",
+  "valor",
+  "parcelas",
+  "company"
+ ],
+ "fields": [
+  {
+   "fieldname": "fatura",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Fatura",
+   "options": "Sales Invoice",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cliente",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cliente",
+   "options": "Customer",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "company.name",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "valor",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Valor Total",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "parcelas",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "N\u00famero de Parcelas",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "cpfcnpj",
+   "fieldtype": "Data",
+   "label": "CPF / CNPJ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tipo_cliente",
+   "fieldtype": "Select",
+   "label": "Tipo de Cliente",
+   "options": "\nPessoa F\u00edsica\nPessoa Jur\u00eddica",
+   "read_only": 1
+  },
+  {
+   "fieldname": "telefone",
+   "fieldtype": "Data",
+   "label": "Telefone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "E-mail",
+   "options": "Email"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-03 13:06:54.617070",
+ "modified_by": "Administrator",
+ "module": "Boleto Bancario",
+ "name": "Faturas de Boletos por Fatura de Venda",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

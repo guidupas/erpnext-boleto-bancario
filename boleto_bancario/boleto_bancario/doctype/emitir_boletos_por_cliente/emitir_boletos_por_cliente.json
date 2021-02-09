@@ -1,0 +1,75 @@
+{
+ "autoname": "EMISSAO-CLI-.DD.-.MM.-.YYYY.######",
+ "creation": "2021-01-14 15:35:57.239689",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plataforma_emissora",
+  "column_break_2",
+  "data_vencimento_boleto",
+  "company",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "plataforma_emissora",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Plataforma Emissora",
+   "options": "Gerencianet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_vencimento_boleto",
+   "fieldtype": "Date",
+   "label": "Data de Vencimento do Boleto",
+   "reqd": 1
+  },
+  {
+   "default": "company.name",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Emitir Boletos por Cliente",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-01-14 15:35:57.239689",
+ "modified_by": "Administrator",
+ "module": "Boleto Bancario",
+ "name": "Emitir Boletos por Cliente",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
