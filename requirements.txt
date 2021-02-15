@@ -1,5 +1,2 @@
 frappe
 erpnext
-gerencianet
-requests==2.22.0
-six==1.11.0
