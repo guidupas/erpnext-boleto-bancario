@@ -169,7 +169,8 @@ def realizar_atualizacao_boleto(client_id, client_secret, codigo_cobranca, name)
 	doc_boleto_atualizado = atualizar_situacao_boleto(client_id, client_secret, doc_boleto)
 
 	if(doc_boleto_atualizado.situacao == 'Pago' or doc_boleto_atualizado.situacao == 'Marcado como pago' ):
-		pagar_boleto(doc_boleto_atualizado)
+		if(doc_boleto_atualizado.fatura):
+			pagar_boleto(doc_boleto_atualizado)
 
 @frappe.whitelist()
 def atualizar_situacao_boleto(client_id, client_secret, doc_boleto):
