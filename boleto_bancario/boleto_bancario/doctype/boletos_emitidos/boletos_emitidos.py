@@ -5,7 +5,7 @@
 from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
-from gerencianet import Gerencianet
+from boleto_bancario.boleto_bancario.gerencianet import Gerencianet
 from erpnext.accounts.doctype.payment_entry.payment_entry import get_payment_entry
 
 class BoletosEmitidos(Document):
