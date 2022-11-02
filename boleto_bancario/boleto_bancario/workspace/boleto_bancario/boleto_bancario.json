@@ -1,0 +1,68 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2022-11-02 11:00:53.107272",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Boleto Bancario",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Boletos Banc\u00e1rios",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Boleto por Cliente",
+   "link_to": "Emitir Boletos por Cliente",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Boleto por Fatura de Venda",
+   "link_to": "Emitir Boletos por Faturas de Venda",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Configura\u00e7\u00f5es",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Plataforma Gerencianet",
+   "link_to": "Configurar Plataforma Gerencianet",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-11-02 11:16:52.663912",
+ "modified_by": "Administrator",
+ "module": "Boleto Bancario",
+ "name": "Boleto Bancario",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": []
+}
